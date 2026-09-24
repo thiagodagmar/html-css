@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+    --bg1: #F4ECD8;
+    --bg2: #EDE3CC;
+    --bg-dark: #2B2118;
+    --primary: #B33A2E;
+    --secondary: #8C7B5E;
+
+    --font-default: "Lora", serif;
+    --font-display: "Fraunces", serif;
+
+    --base: 1em;
+    --fs2x: 2em;
+    --fs3x: 3em;
+    --fs1: 1.5em;
+    --fs2: 1.125em;
+    --fs3: 0.875em;
+    --fs4:0.75em;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-default);
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--bg1);
+    color: var(--bg-dark);
+}
+
+header {
+    background-color: var(--bg1);
+    padding: 24px 16px 24px 16px;
+    border-bottom: 2px solid var(--bg-dark);
+    
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-size: var(--fs1);
+    font-weight: 700;
+    display: inline;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.signature {
+    color: var(--secondary);
+    display: inline;
+}
+
+.extra a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary);
+}
+
+footer {
+    background-color: var(--bg-dark);
+    padding: 8px 16px 8px 16px;
+    text-align: center;
+    color: var(--bg1);
+    font-size: var(--fs4);
+    
+}
+
+footer a {
+    color: var(--bg1);
+    text-decoration: none;
+    font-weight: 800;
+}

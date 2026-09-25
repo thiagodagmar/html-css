@@ -41,6 +41,10 @@ header {
     background-color: var(--bg1);
     padding: 24px 32px 24px 32px;
     border-bottom: 2px solid var(--bg-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -48,7 +52,6 @@ header {
     font-family: var(--font-display);
     font-size: var(--fs1);
     font-weight: 700;
-    display: inline;
 }
 
 .text-primary {
@@ -57,19 +60,56 @@ header {
 
 .signature {
     color: var(--secondary);
-    display: inline;
+    font-size: var(--fs3);
+    font-style: italic;
 }
 
 .hero {
-    padding: 32px;
+    padding: 64px 32px 64px 32px;
+    max-width: 480px;
+    margin: auto;
+    text-align: center;
 }
 
-section.default, section.image {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+.hero .kicker {
+    font-size: var(--fs3);
+    color: var(--primary);
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-family: var(--font-display);
+    font-size: var(--fs3x);
+    margin-bottom: 8px;
+}
+
+.hero p {
+    color: var(--secondary);
+    font-size: var(--fs3);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.divider {
+    background-color: var(--primary);
+    width: 36px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 32px auto;
+}
+
+section {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     padding-left: 32px;
     font-size: var(--fs2);
     line-height: var(--fs1);
+}
+
+section p {
+    margin-bottom: 32px;
 }
 
 section.default {
@@ -77,12 +117,41 @@ section.default {
     color: var(--bg-dark);
 }
 
+section#df01 {
+    background-color: var(--bg2);
+}
+
+
 section.image {
     background-color: var(--secondary);
     color: var(--bg1);
+    box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 0.336);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section.extra {
+section#img01 {
+    background-image: url(../imagens/bg001.png);
+    background-position: right center;
+    
+}
+
+.destaque {
+    background-color: var(--bg-dark);
+    padding: 4px;
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+section#img02 {
+    background-image: url(../imagens/bg002.png);
+    background-position: right center;
+    
+    
+}
+
+aside.extra {
     padding: 32px;
     text-align: center;
     font-style: italic;

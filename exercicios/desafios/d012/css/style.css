@@ -39,7 +39,7 @@ html, body {
 
 header {
     background-color: var(--bg1);
-    padding: 24px 16px 24px 16px;
+    padding: 24px 32px 24px 32px;
     border-bottom: 2px solid var(--bg-dark);
     
 }
@@ -58,6 +58,36 @@ header {
 .signature {
     color: var(--secondary);
     display: inline;
+}
+
+.hero {
+    padding: 32px;
+}
+
+section.default, section.image {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 32px;
+    font-size: var(--fs2);
+    line-height: var(--fs1);
+}
+
+section.default {
+    background-color: var(--bg1);
+    color: var(--bg-dark);
+}
+
+section.image {
+    background-color: var(--secondary);
+    color: var(--bg1);
+}
+
+section.extra {
+    padding: 32px;
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+
 }
 
 .extra a {

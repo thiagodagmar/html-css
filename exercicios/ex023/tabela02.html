@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+            color: white;
         }
 
         th, td {
@@ -19,7 +27,7 @@
             padding: 8px;
         }
 
-        thead, tfoot {
+        tfoot {
             background-color: grey;
             color: white;
         }
@@ -27,15 +35,31 @@
             text-align: right;
 
         }
+
+        tbody > tr:nth-child(even){
+            font-weight: 700;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas extensas</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
 
         </thead>
@@ -150,10 +174,15 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>210 998 995</strong></td>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos hic, soluta exercitationem mollitia beatae voluptates nisi, minus id quo quidem cum quam perferendis praesentium illo consectetur fuga sequi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio praesentium est illum repudiandae doloribus ab possimus laudantium voluptas. Cum, delectus rerum cumque eligendi quidem eum nostrum incidunt architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, eum quod voluptatum earum autem reiciendis distinctio nihil voluptates, laborum dolores sed. Ea minima voluptatem magnam eveniet quam minus reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quam assumenda magni doloremque perspiciatis ipsam ex incidunt ab repellendus fuga velit veniam consequuntur eveniet necessitatibus nemo odio recusandae quasi iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos hic, soluta exercitationem mollitia beatae voluptates nisi, minus id quo quidem cum quam perferendis praesentium illo consectetur fuga sequi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio praesentium est illum repudiandae doloribus ab possimus laudantium voluptas. Cum, delectus rerum cumque eligendi quidem eum nostrum incidunt architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, eum quod voluptatum earum autem reiciendis distinctio nihil voluptates, laborum dolores sed. Ea minima voluptatem magnam eveniet quam minus reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quam assumenda magni doloremque perspiciatis ipsam ex incidunt ab repellendus fuga velit veniam consequuntur eveniet necessitatibus nemo odio recusandae quasi iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos hic, soluta exercitationem mollitia beatae voluptates nisi, minus id quo quidem cum quam perferendis praesentium illo consectetur fuga sequi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio praesentium est illum repudiandae doloribus ab possimus laudantium voluptas. Cum, delectus rerum cumque eligendi quidem eum nostrum incidunt architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, eum quod voluptatum earum autem reiciendis distinctio nihil voluptates, laborum dolores sed. Ea minima voluptatem magnam eveniet quam minus reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quam assumenda magni doloremque perspiciatis ipsam ex incidunt ab repellendus fuga velit veniam consequuntur eveniet necessitatibus nemo odio recusandae quasi iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos hic, soluta exercitationem mollitia beatae voluptates nisi, minus id quo quidem cum quam perferendis praesentium illo consectetur fuga sequi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio praesentium est illum repudiandae doloribus ab possimus laudantium voluptas. Cum, delectus rerum cumque eligendi quidem eum nostrum incidunt architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, eum quod voluptatum earum autem reiciendis distinctio nihil voluptates, laborum dolores sed. Ea minima voluptatem magnam eveniet quam minus reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quam assumenda magni doloremque perspiciatis ipsam ex incidunt ab repellendus fuga velit veniam consequuntur eveniet necessitatibus nemo odio recusandae quasi iure?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos hic, soluta exercitationem mollitia beatae voluptates nisi, minus id quo quidem cum quam perferendis praesentium illo consectetur fuga sequi amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio praesentium est illum repudiandae doloribus ab possimus laudantium voluptas. Cum, delectus rerum cumque eligendi quidem eum nostrum incidunt architecto consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, eum quod voluptatum earum autem reiciendis distinctio nihil voluptates, laborum dolores sed. Ea minima voluptatem magnam eveniet quam minus reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, quam assumenda magni doloremque perspiciatis ipsam ex incidunt ab repellendus fuga velit veniam consequuntur eveniet necessitatibus nemo odio recusandae quasi iure?</p>
 </body>
 </html>

@@ -32,9 +32,9 @@ main {
 
 h1 {
     text-align: center;
-    color: coral;
+    color: rgb(233, 127, 88);
     font-size: 2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+    text-shadow: 2px 2px 4px rgba(8, 6, 6, 0.699);
 }
 
 img {

@@ -1,3 +1,87 @@
 @charset "UTF-8";
 
 /*Todas as demais medias*/
+
+/* Typical Device Breakpoints para mobile first - Tailwind CSS 2026:
+
+Celulares menores: até 639px (sem media querie)
+Celular grande / paisagem: 640px
+Tablet: 768px
+Notebook / tablet deitado: 1024px
+Desktop: 1280px
+Grandes telas: 1536px
+
+*/
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main>h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvide.com';
+        text-decoration: overline;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: block;}
+}
+
+/*TABLET*/
+@media screen  and (min-width: 768px) and (max-width: 1279px) {
+    body {
+        background-image: url(..//imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+    img#print { display: none;}
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+    img#print { display: none;}
+    
+}
+
+
+/*TELAS GRANDES*/
+@media screen and (min-width: 1536px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
+    img#print { display: none;}
+}
